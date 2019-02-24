@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header>
+      <div class="container">
+        <div class="logo">Calendar App</div>
+        <button class="button-add" data-js="btnAppointebt">Add Appointement</button>
+      </div>
+    </header>
+		
+    <main>
+      <div class="container">
+        <section class="form" data-js="formAdd">
+          <div class="form__fields">
+            <label for="day">Select Day</label>
+						<select name="day" data-js="selectDay">
+							<option value="">Day</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+            </select>
+          </div>
+          <div class="form__fields">
+            <label for="title">Title</label>
+            <input type="text" name="title" />
+          </div>
+          <div class="form__fields">
+            <button>Add</button>
+          </div>
+          <div class="form__help">
+            <p class="alert">An appointment has already been made on this date.</p>
+            <p class="error">The title field can not be empty.</p>
+          </div>
+        </section>
+        
+        <h1>Do not lose any more commitment</h1>
+        <section class="calendar">
+          <div class="calendar__day">
+            <span>01</span>
+            <article class="calendar__appointment" data-js="01">
+              <div class="calendar__appointment_item">
+                <h2>Reunião do time redes toda quarta-feira</h2>
+              </div>
+            </article>
+          </div>
+          <div class="calendar__day">
+            <span>02</span>
+            <article class="calendar__appointment" data-js="02">
+            </article>
+          </div>
+          <div class="calendar__day">
+            <span>03</span>
+            <article class="calendar__appointment" data-js="03">
+            </article>
+          </div>
+          <div class="calendar__day">
+            <span>04</span>
+            <article class="calendar__appointment" data-js="04">
+            </article>
+          </div>
+          <div class="calendar__day">
+            <span>05</span>
+            <article class="calendar__appointment" data-js="05">
+            </article>
+          </div>
+        </section>
+      </div>
+		</main>
+		<script src="./script.js"></script>
+</body>
+</html>
