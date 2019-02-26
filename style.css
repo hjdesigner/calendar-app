@@ -84,6 +84,9 @@ header .button-add {
 .form__fields input {
   width: 500px;
   height: 40px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 1.4em;
 }
 .form__fields button {
   width: 100px;
